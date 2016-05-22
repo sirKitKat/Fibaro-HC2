@@ -5,6 +5,17 @@
 %% globals
 --]]
 
+-- This scene will use the scene activation from a Fibaro Dimmer 2
+-- to detect a double click and will set the value of the light to
+-- 100% if the current value is below 50% or to 10% if the current
+-- value is above 50%.
+--
+-- Dimmer 2 will need the following configuration to make this work:
+--  * Parameter 23: value 0 (Disable default double click)
+--  * Parameter 28: value 1 (Enable scene activation)
+
+-- Code --
+
 -- Trigger type
 local trigger = fibaro:getSourceTrigger()
 
