@@ -6,8 +6,6 @@
 
 -- Initialize table
 local M = {}
-M.conf = {}
-M.dev = {}
 M.user = {}
 M.app = {}
 
