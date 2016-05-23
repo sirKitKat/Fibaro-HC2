@@ -4,6 +4,28 @@
 %% globals
 --]]
 
+-- Description --
+-- *********** --
+-- This script will make your devices accessible through a master table, stored in a global variable.
+-- 
+-- To use this script, first create a global variable with the name 'MasterTable'
+--
+-- This script will run automatically when the home center boots up or when you save changes to the script.
+-- This script aslo needs to be run when you change the name of a device or add a new device.
+--
+-- You can add custom values in the first part of the script to easely store global settings.
+-- This is done in the first part of the script.
+-- The second part of the script will scan you'r devices and add them to the table.
+--
+-- After the table is stored, it will be printed out again so you can review the structure.
+
+-- To use this tabel in an other script, include the following code at the beginning of the script.
+--     local M = json.decode( fibaro:getGlobalValue("MasterTable") )
+
+
+-- Code --
+-- **** --
+
 -- Initialize table
 local M = {}
 M.user = {}
