@@ -4,4 +4,8 @@ Through the API of a HC2, new scenes could be added and changes to excisting sce
 This clould result in the HC2 pulling general functions and code from a central place like GitHub.
 updating code could be one of the posibilities !
 
+Update 2018-04-11:
+  Succesfully tested and this works. I'll try to optimize the code further and make it more dummy proof.
+  Extra task will be to pull code from github instead of other scenes
+
 
